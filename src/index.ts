@@ -292,6 +292,7 @@ export default class ResolveToByDelegateTransform implements Transform {
                                 };
                                 const targetArgs: any = {};
                                 let options: any = {};
+                                const sourceArgs: any = resolver.args.sourceArgs || context.rootArgs
 
                                 if (resolver.args.keysArg) {
                                     for (const argPath in resolver.args.additionalArgs || {}) {
@@ -323,7 +324,7 @@ export default class ResolveToByDelegateTransform implements Transform {
                                         resolverData,
                                         { targetArgs },
                                         'targetArgs',
-                                        resolver.args.sourceArgs,
+                                        sourceArgs,
                                     );
 
                                     options = {
@@ -368,7 +369,7 @@ export default class ResolveToByDelegateTransform implements Transform {
                                             { ...resolverData, root: omptimizedRoot },
                                             { targetArgs },
                                             'targetArgs',
-                                            resolver.args.sourceArgs,
+                                            sourceArgs,
                                         );
 
                                         return delegate({

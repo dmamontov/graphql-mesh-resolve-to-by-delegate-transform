@@ -1,6 +1,6 @@
 {
   "name": "@dmamontov/graphql-mesh-resolve-to-by-delegate-transform",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Dmitry Mamontov",
   "type": "module",
   "repository": {
@@ -50,7 +50,6 @@
     "@graphql-tools/stitch": "^9.2.8",
     "@graphql-tools/utils": "^10.1.2",
     "@graphql-tools/wrap": "^10.0.5",
-    "@types/lodash": "^4.17.23",
     "clean-deep": "^3.4.0",
     "deepmerge": "^4.3.1",
     "dset": "^3.1.3",
